@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;setup/src/main/java/com.example.domain&apos;&#x0D;&#x0A;- Original project: &apos;Ex05&apos;&#x0D;&#x0A;- Destination element: &apos;setup/src/main/java/com.example.domain&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.example.domain.PageMaker.java&#x0D;&#x0A;     com.example.domain.Criteria.java" description="Copy compilation units" destination="=setup/src\/main\/java&lt;com.example.domain" element1="/src\/main\/java&lt;com.example.domain{PageMaker.java" element2="/src\/main\/java&lt;com.example.domain{Criteria.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1605570454672" units="2" version="1.0"/>
+</session>

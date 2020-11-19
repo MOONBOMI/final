@@ -1,0 +1,8 @@
+package com.example.mapper;
+
+import com.example.domain.MessageVO;
+
+public interface MessageMapper {
+
+	public void insert(MessageVO vo);
+}
