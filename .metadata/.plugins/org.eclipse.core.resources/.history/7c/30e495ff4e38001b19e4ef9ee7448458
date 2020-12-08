@@ -1,0 +1,8 @@
+package com.example.mapper_oracle;
+
+import com.example.domain.CategoryVO;
+
+public interface CategoryMapper {
+
+	public void insert(CategoryVO vo);
+}

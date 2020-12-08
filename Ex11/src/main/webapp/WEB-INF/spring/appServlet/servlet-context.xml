@@ -31,4 +31,13 @@
 	<beans:bean id="uploadPath" class="java.lang.String">
 		<beans:constructor-arg value="c:/zzz/upload" />
 	</beans:bean>
+	
+	<interceptors>
+		<interceptor>
+			<mapping path="/insert"/>
+			<mapping path="/read"/>
+			<beans:bean id="AuthInterceptor" class="com.example.Interceptor.AuthInterceptor"></beans:bean>
+		</interceptor>
+	</interceptors>
+	
 </beans:beans>

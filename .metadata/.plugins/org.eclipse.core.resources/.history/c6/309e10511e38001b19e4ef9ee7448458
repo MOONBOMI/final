@@ -1,0 +1,9 @@
+package com.example.mapper_oracle;
+
+import com.example.domain.DepositAccountVO;
+
+public interface DepositAccountMapper {
+
+	public void insert(DepositAccountVO vo);
+	
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper_oracle.LcategoryMapper">
+	 <insert id="insert">
+	 	insert into LCATEGORY(lcategorycode, lcategoryname) values(#{lcategorycode},#{lcategoryname})
+	 </insert>
+	 <select id="list" resultType="com.example.domain.LcategoryVO">
+	 	select * from LCATEGORY
+	 </select>
+	 <select id="read" resultType="com.exampel.domain.LcategoryVO">
+	 	select * from LCATEGORY where lcategorycode=#{lcategorycode}
+	 </select>
+	 <update id="update">
+	 	update LCATEGORY set lcategorycode=#{lcategorycode}, lcategoryname=#{lcategoryname}
+	 </update>
+</mapper>

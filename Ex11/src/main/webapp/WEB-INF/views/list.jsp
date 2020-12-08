@@ -18,6 +18,9 @@
 <body>
 	<h1>[상품목록]</h1>
 	<a href="insert">상품등록</a>
+	<c:if test="${uid==null }"><a href="login">로그인</a></c:if>
+	<c:if test="${uid!=null }"><a href="logout">로그아웃</a><span>${uid }님 안녕</span></c:if>
+	
 	<form name="frm">
 		<input type="hidden" name="page" value="1">
 		<select name="seachType">

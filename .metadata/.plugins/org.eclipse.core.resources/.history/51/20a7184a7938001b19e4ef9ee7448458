@@ -1,0 +1,11 @@
+package com.example.mapper_oracle;
+
+import java.util.HashMap;
+
+import com.example.domain.CategoryVO;
+
+public interface CategoryMapper {
+
+	public void categoryinsert(CategoryVO vo);
+	public List<HashMap<String, Object>> categorylist();
+}

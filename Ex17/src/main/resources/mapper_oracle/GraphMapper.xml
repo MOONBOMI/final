@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper_oracle.GraphMapper">
+	 <select id="cavg" resultType="hashmap">
+	 	select lname, avg(grade) avg from courses c, enrollments e where c.lcode=e.lcode group by lname
+	 </select>
+	 <select id="savg" resultType="hashmap">
+	 	select sname, avg(grade) avg from students s, enrollments e where s.scode=e.scode group by sname
+	 </select>
+	 <select id="dcount" resultType="hashmap">
+	 	select dept, count(scode) cnt from students group by dept
+	 </select>
+</mapper>
