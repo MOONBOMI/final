@@ -5,7 +5,56 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-12-03T22:56:26Z</updated>
+  <updated>2020-12-09T09:46:05Z</updated>
+  <entry>
+    <title>Spring Framework 5.3.2, 5.2.12, 5.1.20, 5.0.20, and 4.3.30 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/12/09/spring-framework-5-3-2-5-2-12-5-1-20-5-0-20-and-4-3-30-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>St?phane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2020-12-09:4288</id>
+    <updated>2020-12-09T09:46:05Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce a full round of Spring Framework releases.&lt;/p&gt;
+&lt;p&gt;Spring Framework 5.3.2 includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.3.2"&gt;54 fixes and improvements&lt;/a&gt;. Spring Framework 5.2.12 includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.12.RELEASE"&gt;18 fixes and improvements&lt;/a&gt;. Spring Framework 5.1.20 includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.1.20.RELEASE"&gt;14 selected fixes and improvements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The last maintenance releases for &lt;code&gt;5.0.x&lt;/code&gt; (&lt;code&gt;5.0.20&lt;/code&gt;) and &lt;code&gt;4.3.x&lt;/code&gt; (&lt;code&gt;4.3.30&lt;/code&gt;) with &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.0.20.RELEASE"&gt;12 selected fixes and improvements&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v4.3.20.RELEASE"&gt;8 selected fixes and improvements&lt;/a&gt; respectively are also available today.&lt;/p&gt;
+&lt;p&gt;Stay tuned for follow-up Spring Boot releases 2.2.12, 2.3.7, and 2.4.1!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.3.2/spring-framework-reference"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - December 8th, 2020</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/12/08/this-week-in-spring-december-8th-2020" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2020-12-08:4287</id>
+    <updated>2020-12-08T23:35:49Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! Can you believe we&amp;rsquo;re already past the first week of the last month of the year? I can&amp;rsquo;t even believe that it&amp;rsquo;s already been a week since we last congregated here, for this humble column, let alone almost a year since 2019! What a whirlwind. &lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve got a ton of stuff to catch up on so let&amp;rsquo;s get to it! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://hackr.io/blog/java-frameworks"&gt;10 Best Java Frameworks to Use in 2020 [Updated]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/12/03/a-bootiful-podcast-dr-heinz-kabutz"&gt;A Bootiful Podcast: Dr. Heinz Kabutz&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/maciejwalkowiak/status/1334884605799882753?s=12"&gt;How to figure out which Spring Boot versions are compatible with which Spring Cloud versions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=fV6oVW3YQRw"&gt;J-Fall Virtual 2020: Josh Long - Keynote: Cloud Native Java, Redux - YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/micrometer-metrics/prometheus-rsocket-proxy/releases/tag/v1.3.0"&gt;Micrometer&amp;rsquo;s RSocket-based Prometheus proxy version 1.3.0 has been released. This upgrades to RSocket 1.1, Spring Boot 2.4, and Java 11 runtime for the proxy container image. It&amp;rsquo;s also using Paketo buildpacks to build the container now.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/making/status/1334122420177838080?s=12"&gt;Spring Boot can create a JFR dump&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/12/02/spring-cloud-2020-0-0-m6-aka-ilford-is-available"&gt;Spring Cloud 2020.0.0-M6 (aka Ilford) Is Available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/12/02/spring-cloud-app-broker-1-2-1-released"&gt;Spring Cloud App Broker 1.2.1 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/12/02/spring-cloud-data-flow-2-6-4-and-2-7-0-released"&gt;Spring Cloud Data Flow 2.6.4 and 2.7.0 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/12/03/spring-security-5-4-2-5-3-6-and-5-2-8-released"&gt;Spring Security 5.4.2, 5.3.6, and 5.2.8 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/12/06/towards-openjdk-17/"&gt;Towards OpenJDK 17&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/reactiveoss/status/1336318619785940992?s=12"&gt;Welcome to the Reactive Foundation, R2DBC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/vmworld/2020/12/what-now-to-miss-on-vmware-cloud-on-aws.html"&gt;What Now to Miss on VMware Cloud on AWS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/research/2020/12/07/whats-new-differential-datalog/"&gt;What¡¯s new? Differential Datalog.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://maarten.mulders.it/2020/11/whats-new-in-maven-4/"&gt;what&amp;rsquo;s new in Apache Maven 4?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/12/03/some-thoughts-about-project-health/"&gt;¡°If You Can¡¯t Measure It, You Can¡¯t Manage It¡± ? Some Thoughts About Project Health&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/1335241797489094656"&gt;I asked: Which version of @Java are you using? Why?&lt;/a&gt; and the results are fascinating!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcloud/status/1334163572058943489"&gt;https://twitter.com/springcloud/status/1334163572058943489 @springcloud Spring Cloud 2020.0.0-M6 (aka Ilford) has been released! Would appreciate any feedback on this release before we release our first release candidate early next week! https://t.co/vybA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Dr. Heinz Kabutz</title>
     <link rel="alternate" href="https://spring.io/blog/2020/12/03/a-bootiful-podcast-dr-heinz-kabutz" />
@@ -1482,82 +1531,6 @@ elasticsearchConsumer.accept(message);&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Data 2020.0 - New and Noteworthy in Spring Data MongoDB 3.1</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/11/13/spring-data-2020-0-new-and-noteworthy-in-spring-data-mongodb-3-1" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Christoph Strobl</name>
-    </author>
-    <id>tag:spring.io,2020-11-05:4259</id>
-    <updated>2020-11-13T12:50:42Z</updated>
-    <content type="html">&lt;p&gt;The Spring Data MongoDB 3.1 release is one of the modules that highly benefited from the recent changes in the &lt;a href="https://spring.io/blog/2020/11/06/spring-data-2020-0-new-and-noteworthy-a-general-overview"&gt;Spring Data Commons&lt;/a&gt; module, by leveraging the infrastructure built there to bring reactive features like auditing and SpEL.&lt;/p&gt;
-&lt;p&gt;The following snippet gives you an impression of what this means for declarative MongoDB queries using SpEL:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Query(&amp;quot;{ &amp;#39;supervisor&amp;#39; : ?#{ hasRole(&amp;#39;ROLE_ADMIN&amp;#39;) ? new Document(&amp;#39;$regex&amp;#39;, &amp;#39;*&amp;#39;) : principal.name } }&amp;quot;)&#xD;
-Flux&amp;lt;Person&amp;gt; findAllFilteredByRole();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;@EnableReactiveMongoAuditing&lt;/code&gt; uses the common infrastructure so you can keep track of changes easily.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@Configuration&#xD;
-@EnableReactiveMongoAuditing&#xD;
-static class AuditingConfig extends AbstractReactiveMongoConfiguration {&#xD;
-   &#xD;
-    @Override&#xD;
-     protected String getDatabaseName() {&#xD;
-        return &amp;quot;database&amp;quot;;&#xD;
-    }&#xD;
-    &#xD;
-    @Bean&#xD;
-    public ReactiveAuditorAware&amp;lt;User&amp;gt; auditorProvider() {&#xD;
-        return () -&amp;gt; ReactiveSecurityContextHolder.getContext()&#xD;
-        .map(it -&amp;gt; ...);&#xD;
-    }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Another focus of the current release was to keep up with the changes and enhancements around the MongoDB Aggregation Framework that lets you specify all sorts of data aggregation operations now, even including the possibility to run JavaScript functions as part of the pipeline (as shown in the example), recreating the average books calculation from the &lt;a href="https://docs.mongodb.com/manual/reference/operator/aggregation/accumulator/#examples"&gt;MongoDB reference documentation&lt;/a&gt;, below:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;Accumulator accumulator = accumulatorBuilder()&#xD;
-	.init(&amp;quot;function() { return { count: 0, sum: 0 } }&amp;quot;)&#xD;
-	.accumulate(&amp;quot;function(state, numCopies) { return { count: state.count + 1, sum: state.sum + numCopies } }&amp;quot;)&#xD;
-	.accumulateArgs(&amp;quot;$copies&amp;quot;)&#xD;
-	.merge(&amp;quot;function(state1, state2) { return { count: state1.count + state2.count, sum: state1.sum + state2.sum } }&amp;quot;)&#xD;
-	.finalize(&amp;quot;function(state) { return (state.sum / state.count) }&amp;quot;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To improve performance of aggregations operating on large datasets, MongoDB lets you add index hints to the pipeline by using &lt;code&gt;AggregationOptions.builder().hint(&amp;quot;...&amp;quot;)&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Speaking of indices, although we highly recommend taking programmatic control over index creation, we also understand the convenience of declarative index definition holds. Therefore, we added partial filter expressions to the &lt;code&gt;@Indexed&lt;/code&gt; and &lt;code&gt;@CompoundIndex&lt;/code&gt; annotations to make index setup a little more convenient, as shown below:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;@CompoundIndex(name = &amp;quot;idx&amp;quot;, def = &amp;quot;...&amp;quot;, partialFilter = &amp;quot;{&amp;#39;ssn&amp;#39;: {&amp;#39;$exists&amp;#39;: true}}&amp;quot;)&#xD;
-public class Person {&#xD;
-	&#xD;
-	//...&#xD;
-	@Indexed(partialFilter = &amp;quot;{&amp;#39;rating&amp;#39;: { $lt: 10 }}&amp;quot;) &#xD;
-	String lastname;&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So now that we have sped up aggregations and indexes, it is about time we talk about counting elements. As you know, we switched &lt;code&gt;MongoOperations.count(...)&lt;/code&gt; (which previously worked on cached collection statistics) to run an aggregation for precise counting as part of our efforts on &lt;a href="https://spring.io/blog/2018/06/28/hands-on-mongodb-4-0-transactions-with-spring-data"&gt;Multi Document Transactions&lt;/a&gt;.&lt;br/&gt;Now, in some cases, one might not need the exact document count but can live with a close enough approximation. For those cases, you can now get an estimate from &lt;code&gt;MongoOperations.estimatedCount(...)&lt;/code&gt;. &lt;/p&gt;
-&lt;p&gt;Last but not least, I wanted to mention the incubating &lt;a href="https://www.graalvm.org/reference-manual/native-image/"&gt;GraalVM native image&lt;/a&gt; support for Spring Data MongoDB. Make sure to have Docker installed (just for convenience, as this will get you going without the need to install the GraalVM nor MongoDB) and check out the samples demonstrating instant startup for your &lt;a href="https://github.com/spring-projects-experimental/spring-graalvm-native/tree/0.8.2/spring-graalvm-native-samples/data-mongodb"&gt;classic&lt;/a&gt; or &lt;a href="https://github.com/spring-projects-experimental/spring-graalvm-native/tree/0.8.2/spring-graalvm-native-samples/data-mongodb-reactive"&gt;reactive&lt;/a&gt; MongoDB application.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint bash"&gt;$ git clone https://github.com/spring-projects-experimental/spring-graalvm-native.git&#xD;
-$ cd spring-graalvm-native&#xD;
-$ git checkout 0.8.2&#xD;
-$ ./run-dev-container.sh&#xD;
-...@docker: cd spring-graalvm-native-samples/data-mongo&#xD;
-...@docker: ./build.sh&#xD;
-...@docker: ./target/data-mongodb
-&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.3.6 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/11/13/spring-boot-2-3-6-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>St?phane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2020-11-12:4269</id>
-    <updated>2020-11-13T05:24:26Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot 2.3.6 has been released and is now available from Maven Central.&lt;/p&gt;
-&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.3.6.RELEASE"&gt;30 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.3.6.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

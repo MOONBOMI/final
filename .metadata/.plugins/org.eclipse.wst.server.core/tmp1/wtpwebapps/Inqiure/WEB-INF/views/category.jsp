@@ -47,13 +47,12 @@
 </form>
 </body>
 <script>
-//$(frm1).hide();
+$(frm1).hide();
 
-getList();
+//getList();
 
 function getList() {
 	var addList = "";
-	
 	$.ajax({
 		type:"get",
 		url:"categorylist.json",
@@ -61,13 +60,13 @@ function getList() {
 			if($(data.NAME)!= null){
 				addList += "<thead><td width=100>대분류</td><td width=100>중분류 상품 코드</td><td width=100>중분류 상품 이름</td></thead><tbody id='body'>";
 				$(data).each(function() {
-						addList += "<tr class='category' ><td width=100 class='lcategoryname'rowspan=4>"+this.NAME.split("/")[1]+"<input type='text' class='lcategorycode' value='"+this.CODE+"'></td></tr>";
-						addList += "<tr class='row'><td width=100 class='mcategorycode'>001</td>";
-						addList += "<td width=100 class='mcategoryname'><input value='"+this.CODE+"' type='text' size=30  class='midname' placeholder='ex)아메리카노,아이스라떼,카페모카 등..'></td></tr>";
-						addList += "<tr class='row'><td width=100 class='mcategorycode'>002</td>";
-						addList += "<td width=100 class='mcategoryname'><input value='"+this.CODE+"' type='text' size=30 class='midname' ></td></tr>";
-						addList += "<tr class='row'><td width=100 class='mcategorycode'>003</td>";
-						addList += "<td width=100 class='mcategoryname'><input value='"+this.CODE+"' type='text' size=30  class='midname' ></td></tr>";
+					addList += "<tr class='category' ><td width=100 class='lcategoryname' rowspan=4>"+this.NAME.split("/")[1]+"</td></tr>";
+					addList += "<tr class='row' code='"+this.CODE+"' name='"+this.NAME+"'><td width=100 class='mcategorycode'>001</td>";
+					addList += "<td width=100 class='mcategoryname' ><input type='text' size=30  class='midname' placeholder='ex)아메리카노,아이스라떼,카페모카 등..'></td></tr>";
+					addList += "<tr class='row' code='"+this.CODE+"'name='"+this.NAME+"'><td width=100 class='mcategorycode'>002</td>";
+					addList += "<td width=100 class='mcategoryname'><input type='text' size=30 class='midname' ></td></tr>";
+					addList += "<tr class='row' code='"+this.CODE+"'name='"+this.NAME+"'><td width=100 class='mcategorycode'>003</td>";
+					addList += "<td width=100 class='mcategoryname'><input type='text' size=30  class='midname' ></td></tr>";
 				});
 					addList +="</tbody>";
 				$("#tbl1").html(addList);
@@ -114,12 +113,13 @@ function getList() {
 	
 	$(frm).submit(function(e){
 		e.preventDefault();
-		$("#tbl .lcategory").each(function(){
+		if(!$(frm).is(":hidden")){
+			$("#tbl .lcategory").each(function(){
 			var strlcode=$(this).find(".lcategorycode").html();
 			var lcode="153-60-00064/"+strlcode+"/000";
 			var strlname=$(this).find(".lcategoryname").find(".largename").val();
 			var lname="골드스탁/"+strlname+"/empty";
-			
+			if(strlname!=""){
 				$.ajax({
 				type : "post",
 				url :"categoryinsert",
@@ -127,41 +127,38 @@ function getList() {
 				success: function(){
 				}
 			});
+			}
 		});
 		alert("저장완료 되었습니다");
 		$(frm).hide();
 		$(frm1).show();
+		getList();
+		}
 	});
 	
-	$(frm1).submit(function(e){
+		$(frm1).submit(function(e){
 		e.preventDefault();
-// 		$("#tbl1 .category").each(function(){
-// 			var lcode=$(this).find(".lcategorycode").val();//153-60-00064/001
-// 			var lname=$(this).find(".lcategoryname").html().split("<")[0];//컴퓨터
-// 			//var attr=$(this).parent().find(".midname").val();
-// 			//alert(attr);
-// 		});	
-			$("#tbl1 #body").each(function() {
-				var attr=$(".midname").val();
-				alert(attr);
+		if(!$(frm1).is(":hidden")){
+			$("#tbl1 .row").each(function() {
+				var lcode=$(this).attr("code");//153-60-00064/001
+				var lname=$(this).attr("name");//골드스탁/컴퓨터
  				var strmcode=$(this).find(".mcategorycode").html();//001
-// 				var mcode=lcode+"/"+strmcode;
+ 				var mcode=lcode+"/"+strmcode;
  				var strmname=$(this).find(".mcategoryname").find(".midname").val();
-// 				var mname="골드스탁/"+lname+"/"+strmname;
-				//alert(mcode+".........."+mname);
-				
-				//if(attr==lcode) return false;
-// 				$.ajax({
-// 					type : "post",
-// 					url :"categoryinsert",
-// 					data :{"categorycode": mcode, "categoryname":mname},
-// 					success: function(){
-// 					}
-// 				});
-			
+ 				var mname=lname+"/"+strmname;
+				if(strmname!=""){
+					$.ajax({
+						type : "post", 
+						url :"categoryinsert",
+						data :{"categorycode": mcode, "categoryname":mname},
+						success: function(){
+							
+						}
+					});
+				}
 			});
-	
 		alert("저장완료 되었습니다");
+		}
 	});
 </script>
 </html>

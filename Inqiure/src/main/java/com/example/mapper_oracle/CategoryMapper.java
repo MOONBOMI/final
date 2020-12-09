@@ -9,6 +9,6 @@ import com.example.domain.CategoryVO;
 public interface CategoryMapper {
 
 	public void categoryinsert(CategoryVO vo);
-	public List<HashMap<String, Object>> categorylist(String companycode);
+	public List<HashMap<String, Object>> categorylist();
 	
 }

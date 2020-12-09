@@ -4,4 +4,7 @@
 <insert id="loansaccountinsert">
 	insert into loansaccount(loansaccountcode, loansaccountbankname, loansaccountname, loansaccountrate, loansaccountamount, loansaccount_startday, loansaccount_endday) values(#{loansaccountcode}, #{loansaccountbankname},#{loansaccountname}, #{loansaccountrate},#{loansaccountamount},#{loansaccount_startday},#{loansaccount_endday})
 </insert>
+<select id="loansaccountlist" resultType="hashmap">
+	select * from loansview where loansamount=0
+</select>
 </mapper>

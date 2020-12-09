@@ -51,7 +51,7 @@ public class CrawlingController {
 		btnSearch.click();
 		
 		WebDriverWait wait = new WebDriverWait(driver, 6);
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='grid2_cell_0_1']")));
+	    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='grid2_cell_0_1']")));
 		
 		WebElement result = driver.findElement(By.xpath("//*[@id='grid2_cell_0_1']"));
 		array.put("result", result.getText());

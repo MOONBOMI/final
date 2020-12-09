@@ -1,0 +1,9 @@
+package com.example.mapper_oracle;
+
+import java.util.HashMap;
+import java.util.List;
+
+public interface CostAccountMapper {
+
+	public List<HashMap<String, Object>> costaccountlist();
+}

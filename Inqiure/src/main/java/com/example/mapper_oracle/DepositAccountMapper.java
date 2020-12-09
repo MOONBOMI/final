@@ -9,6 +9,6 @@ import com.example.domain.DepositAccountVO;
 public interface DepositAccountMapper {
 
 	public void depositaccountinsert(DepositAccountVO vo);
-	public List<HashMap<String,Object>> depositaccountlist(Criteria cri);
+	public List<HashMap<String,Object>> depositaccountlist();
 	
 }

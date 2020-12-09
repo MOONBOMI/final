@@ -27,8 +27,8 @@ public class CategoryController {
 	
 	@RequestMapping("categorylist.json")
 	@ResponseBody
-	public List<HashMap<String, Object>> categorylist(String number) {
-		List<HashMap<String, Object>> array = mapper.categorylist(number);
+	public List<HashMap<String, Object>> categorylist() {
+		List<HashMap<String, Object>> array = mapper.categorylist();
 		return array;
 	}
 	

@@ -2,6 +2,7 @@ package com.example.controller;
 
 
 import java.util.HashMap;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -35,16 +36,27 @@ public class DepositAccountController {
 		lmapper.loansaccountinsert(lvo);
 	}
 	
-	@RequestMapping(value="depositaccountlist", method=RequestMethod.POST)
+	@RequestMapping("depositaccountlist.json")
 	@ResponseBody
-	public HashMap<String, Object> depositlist(){
-		HashMap<String, Object> map=new HashMap<>();
-		//map.put("list", mapper.depositaccountlist());
-		return map;
+	public List<HashMap<String, Object>> depositlist(){
+		List<HashMap<String, Object>> array=mapper.depositaccountlist();
+		return array;
+	}
+	
+	@RequestMapping("loansaccountlist.json")
+	@ResponseBody
+	public List<HashMap<String, Object>> loanslist(){
+		List<HashMap<String, Object>> array=lmapper.loansaccountlist();
+		return array;
 	}
 	
 	@RequestMapping("depositaccount")
 	public void depositaccount(){
 		
 	}
+	@RequestMapping("insert")
+	public void insert(){
+		
+	}
 }
+	
