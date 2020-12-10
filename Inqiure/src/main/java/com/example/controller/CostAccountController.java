@@ -9,15 +9,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-
 import com.example.domain.CostVO;
+import com.example.domain.DepositVO;
 import com.example.mapper_oracle.CostAccountMapper;
+import com.example.mapper_oracle.DepositAccountMapper;
+import com.example.mapper_oracle.LoansAccountMapper;
+import com.example.service.DepositService;
 
 @Controller
 public class CostAccountController {
 
 	@Autowired
 	CostAccountMapper mapper;
+	@Autowired
+	DepositAccountMapper dmapper;
+	@Autowired
+	LoansAccountMapper lmapper;
+	@Autowired
+	DepositService service;
 	
 	@RequestMapping("costaccount.json")
 	@ResponseBody
@@ -33,6 +42,25 @@ public class CostAccountController {
 			mapper.costinsert(vo);
 		}
 	}
+	@RequestMapping("depositaccountlist.json")
+	@ResponseBody
+	public List<HashMap<String, Object>> depositlist(){
+		List<HashMap<String, Object>> array=dmapper.depositaccountlist();
+		return array;
+	}
+	
+	@RequestMapping("loansaccountlist.json")
+	@ResponseBody
+	public List<HashMap<String, Object>> loanslist(){
+		List<HashMap<String, Object>> array=lmapper.loansaccountlist();
+		return array;
+	}
+	
+	@RequestMapping(value="depositinsert", method=RequestMethod.POST)
+	public void depositinsert(DepositVO vo){
+		service.depositinsert(vo);
+	}
+	
 	
 	@RequestMapping("insert")
 	public void insert(){

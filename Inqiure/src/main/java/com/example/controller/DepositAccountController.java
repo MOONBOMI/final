@@ -36,27 +36,12 @@ public class DepositAccountController {
 		lmapper.loansaccountinsert(lvo);
 	}
 	
-	@RequestMapping("depositaccountlist.json")
-	@ResponseBody
-	public List<HashMap<String, Object>> depositlist(){
-		List<HashMap<String, Object>> array=mapper.depositaccountlist();
-		return array;
-	}
 	
-	@RequestMapping("loansaccountlist.json")
-	@ResponseBody
-	public List<HashMap<String, Object>> loanslist(){
-		List<HashMap<String, Object>> array=lmapper.loansaccountlist();
-		return array;
-	}
 	
 	@RequestMapping("depositaccount")
 	public void depositaccount(){
 		
 	}
-	@RequestMapping("insert")
-	public void insert(){
-		
-	}
+
 }
 	

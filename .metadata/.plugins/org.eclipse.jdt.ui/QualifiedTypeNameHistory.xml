@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.example.domain.BoardVO"/>
 <fullyQualifiedTypeName name="com.example.domain.PageMaker"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Param"/>
 <fullyQualifiedTypeName name="com.example.mapper.BoardMapper"/>
 <fullyQualifiedTypeName name="com.example.service.BoardService"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="java.util.UUID"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="org.springframework.util.FileCopyUtils"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="com.example.domain.CostVO"/>
 <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonFormat"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="com.example.domain.DepositVO"/>
 </qualifiedTypeNameHistroy>

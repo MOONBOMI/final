@@ -5,6 +5,12 @@
 	insert into depositaccount(depositaccountcode, depositaccountbankname, depositaccountname, depositaccountrate, depositaccount_startday, depositaccountamount) values(#{depositaccountcode}, #{depositaccountbankname},#{depositaccountname}, #{depositaccountrate},#{depositaccount_startday},#{depositaccountamount})
 </insert>
 <select id="depositaccountlist" resultType="hashmap">
-	select * from depositview where depositamount=0
+	select * from depositView where startbalance=endbalance order by day desc
 </select>
+<insert id="depositinsert">
+	insert into deposit(deposit_companycode, deposit_day, deposit_depositaccountcode, deposittype, depositamount, depositbalance) values(#{deposit_companycode}, #{deposit_day}, #{deposit_depositaccountcode}, #{deposittype}, #{depositamount}, #{depositbalance})
+</insert>
+<update id="depositaccountupdate">
+	update depositaccount set depositaccountamount=#{depositaccountamount} where depositaccountcode=#{depositaccountcode}
+</update>
 </mapper>
