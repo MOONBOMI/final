@@ -7,7 +7,10 @@
 <select id="categorylist" resultType="hashmap">
 	select (substr(categoryname,1,INSTR(categoryname,'/',1,2)-1)) name ,(substr(categorycode,1,INSTR(categorycode,'/',1,2)-1)) code 
 	from category 
-	where categorycode like '153-60-00064/%' 
+	where categorycode like '347-88-00867/%' 
 	group by substr(categoryname,1,INSTR(categoryname,'/',1,2)-1), (substr(categorycode,1,INSTR(categorycode,'/',1,2)-1))
-	</select>
+</select>
+<select id="lcategorylist" resultType="hashmap">
+	select * from category where categorycode like '347-88-00867/%'
+</select>
 </mapper>

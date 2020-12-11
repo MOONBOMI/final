@@ -10,5 +10,5 @@ public interface CategoryMapper {
 
 	public void categoryinsert(CategoryVO vo);
 	public List<HashMap<String, Object>> categorylist();
-	
+	public List<HashMap<String, Object>> lcategorylist();
 }

@@ -25,15 +25,4 @@ public class CategoryController {
 		mapper.categoryinsert(vo);
 	}
 	
-	@RequestMapping("categorylist.json")
-	@ResponseBody
-	public List<HashMap<String, Object>> categorylist() {
-		List<HashMap<String, Object>> array = mapper.categorylist();
-		return array;
-	}
-	
-	@RequestMapping("category")
-	public void category() {
-		
-	}
 }

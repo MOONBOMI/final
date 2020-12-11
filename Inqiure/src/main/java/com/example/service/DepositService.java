@@ -16,6 +16,5 @@ public class DepositService {
 	public void depositinsert(DepositVO vo) {
 		mapper.depositinsert(vo);
 		mapper.depositaccountupdate(vo.getDepositbalance(),vo.getDeposit_depositaccountcode());
-		System.out.println(vo.getDepositbalance()+"/"+vo.getDeposit_depositaccountcode());
 	}
 }

@@ -14,8 +14,8 @@ public class LoansAccountVO {
 	private String loansaccountname;
 	private Number loansaccountrate;
 	private Number loansaccountamount;
-	private Date loansaccount_startday;
-	private Date loansaccount_endday;
+	private String loansaccount_startday;
+	private String loansaccount_endday;
 	
 	public String getLoansaccountcode() {
 		return loansaccountcode;
@@ -47,16 +47,16 @@ public class LoansAccountVO {
 	public void setLoansaccountamount(Number loansaccountamount) {
 		this.loansaccountamount = loansaccountamount;
 	}
-	public Date getLoansaccount_startday() {
+	public String getLoansaccount_startday() {
 		return loansaccount_startday;
 	}
-	public void setLoansaccount_startday(Date loansaccount_startday) {
+	public void setLoansaccount_startday(String loansaccount_startday) {
 		this.loansaccount_startday = loansaccount_startday;
 	}
-	public Date getLoansaccount_endday() {
+	public String getLoansaccount_endday() {
 		return loansaccount_endday;
 	}
-	public void setLoansaccount_endday(Date loansaccount_endday) {
+	public void setLoansaccount_endday(String loansaccount_endday) {
 		this.loansaccount_endday = loansaccount_endday;
 	}
 	

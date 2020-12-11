@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.mapper_oracle.LoansAccountMapper">
-<insert id="loansaccountinsert">
-	insert into loansaccount(loansaccountcode, loansaccountbankname, loansaccountname, loansaccountrate, loansaccountamount, loansaccount_startday, loansaccount_endday) values(#{loansaccountcode}, #{loansaccountbankname},#{loansaccountname}, #{loansaccountrate},#{loansaccountamount},#{loansaccount_startday},#{loansaccount_endday})
-</insert>
-</mapper>

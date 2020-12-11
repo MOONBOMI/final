@@ -5,6 +5,12 @@
 	insert into loansaccount(loansaccountcode, loansaccountbankname, loansaccountname, loansaccountrate, loansaccountamount, loansaccount_startday, loansaccount_endday) values(#{loansaccountcode}, #{loansaccountbankname},#{loansaccountname}, #{loansaccountrate},#{loansaccountamount},#{loansaccount_startday},#{loansaccount_endday})
 </insert>
 <select id="loansaccountlist" resultType="hashmap">
-	select * from loansview where loansamount=0
+	select sum(loansamount) sumamount,loansaccountbankname, loans_companycode, loansaccountcode, loansaccountamount 
+	from loansview
+	group by loansaccountcode,loans_companycode,loansaccountbankname, loansaccountcode,loansaccountamount
 </select>
+<insert id="loansinsert">
+	insert into loans(loans_companycode, loans_loansaccountcode, loans_repaymentday, loansamount, loansbalance) 
+	values(#{loans_companycode}, #{loans_loansaccountcode},#{loans_repaymentday}, #{loansamount},#{loansbalance})
+</insert>
 </mapper>
